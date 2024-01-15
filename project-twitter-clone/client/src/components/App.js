@@ -15,15 +15,21 @@ import Home from "./Home";
 const AppContainer = styled.div`
   display: flex;
 `;
+const Header = styled.div`
+  padding: 16px;
+  width: 130px;
+  height: 100%;
+  border-right: 1px solid #ccc; /* Added border */
+`;
 
 function App() {
   return (
     <Router>
       <AppContainer>
-        <header className="App-header">
+        <Header>
           <h1>Plexus</h1>
           <HomeFeed />
-        </header>
+        </Header>
 
         <Routes>
           <Route

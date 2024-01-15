@@ -14,12 +14,7 @@ const Container = styled.div`
   display: flex;
 `;
 
-const Sidebar = styled.div`
-  color: white;
-  padding: 16px;
-  width: 130px;
-  border-right: 1px solid #ccc; /* Added border */
-`;
+const Sidebar = styled.div``;
 
 const SidebarItem = styled.div`
   display: flex;
