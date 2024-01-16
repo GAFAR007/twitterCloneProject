@@ -66,7 +66,7 @@ const StatLabel = styled.p`
   margin-bottom: 5px;
 `;
 
-const StatValue = styled.p`
+const StatValue = styled.div`
   color: #697787;
   margin: 0;
 

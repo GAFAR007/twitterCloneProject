@@ -11,6 +11,8 @@ import Notification from "./Notification";
 import Bookmark from "./Bookmark";
 import TwitterDetails from "./TwitterDetails";
 import Home from "./Home";
+import PostComponent from "./PostComponent";
+
 // Styled component with flex styling
 const AppContainer = styled.div`
   display: flex;
@@ -45,6 +47,11 @@ function App() {
             element={<Bookmark />}
           />
           <Route
+            path="/myPost"
+            element={<PostComponent />}
+          />
+
+          <Route
             path="/tweet/:tweetId"
             element={<TwitterDetails />}
           />
@@ -53,6 +60,7 @@ function App() {
             element={<Profile />}
           />
         </Routes>
+        {/* Add the PostComponent where you want it in your layout */}
       </AppContainer>
     </Router>
   );
